@@ -16,3 +16,8 @@ body {
       background-color: white;
       color: black;
   }
+
+  .red {
+    background-color: red;
+    color: black;
+}
