@@ -4,8 +4,8 @@
 
 let cross1 = document.querySelector('#cross1');
 
-function delDiv() {
+function delDiv1() {
     document.getElementById("div1").remove();
 }
 
-cross1.addEventListener('click', delDiv);
+cross1.addEventListener('click', delDiv1);
