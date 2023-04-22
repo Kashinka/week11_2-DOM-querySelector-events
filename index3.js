@@ -9,3 +9,20 @@ function delDiv1() {
 }
 
 cross1.addEventListener('click', delDiv1);
+
+
+let cross2 = document.querySelector('#cross2');
+
+function delDiv2() {
+    document.getElementById("div2").remove();
+}
+
+cross2.addEventListener('click', delDiv2);
+
+let cross3 = document.querySelector('#cross3');
+
+function delDiv3() {
+    document.getElementById("div3").remove();
+}
+
+cross3.addEventListener('click', delDiv3);
