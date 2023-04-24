@@ -28,5 +28,3 @@ function delDiv3() {
 cross3.addEventListener('click', delDiv3);
 
 let elem = document.querySelector('#elem');
-
-console.log(elem.firstChild == elem.lastChild);
