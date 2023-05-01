@@ -28,13 +28,13 @@ const result5 = document.getElementById("result5");
 
 result5.innerHTML = `Итого: ${sum} руб.`;
 
-let cucumber20Per = cucumberCost * (20/100);
+let cucumber20Per = cucumberCost * (80/100);
 
-let tomato20Per = tomatoCost * (20/100);
+let tomato20Per = tomatoCost * (80/100);
 
-let greenery20Per = greeneryCost * (20/100);
+let greenery20Per = greeneryCost * (80/100);
 
-let sourcream20Per = sourcreamCost * (20/100);
+let sourcream20Per = sourcreamCost * (80/100);
 
 let couponCost = cucumber20Per + tomato20Per + greenery20Per + sourcream20Per;
 
