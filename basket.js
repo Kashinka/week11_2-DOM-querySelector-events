@@ -21,3 +21,9 @@ result3.innerHTML = `Зелень ${greeneryCost} руб.`;
 const result4 = document.getElementById("result4");
 
 result4.innerHTML = `Сметана ${sourcreamCost} руб.`;
+
+let sum = cucumberCost + tomatoCost + greeneryCost + sourcreamCost;
+
+const result5 = document.getElementById("result5");
+
+result5.innerHTML = `Итого: ${sum} руб.`;
