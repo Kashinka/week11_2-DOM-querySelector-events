@@ -37,3 +37,29 @@ let greenery20Per = greeneryCost * (20/100);
 let sourcream20Per = sourcreamCost * (20/100);
 
 let couponCost = cucumber20Per + tomato20Per + greenery20Per + sourcream20Per;
+
+let button = document.getElementById("button");
+
+button.onclick = function() {
+
+    const result1 = document.getElementById("result1");
+
+    result1.innerHTML = `Огурцы ${cucumber20Per} руб.`;
+
+    const result2 = document.getElementById("result2");
+
+    result2.innerHTML = `Помидоры ${tomato20Per} руб.`;
+
+    const result3 = document.getElementById("result3");
+
+    result3.innerHTML = `Зелень ${greenery20Per} руб.`;
+
+    const result4 = document.getElementById("result4");
+
+    result4.innerHTML = `Сметана ${sourcream20Per} руб.`;
+
+    const result5 = document.getElementById("result5");
+
+    result5.innerHTML = `Итого: ${couponCost} руб.`;
+
+};
