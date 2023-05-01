@@ -27,3 +27,5 @@ let sum = cucumberCost + tomatoCost + greeneryCost + sourcreamCost;
 const result5 = document.getElementById("result5");
 
 result5.innerHTML = `Итого: ${sum} руб.`;
+
+let cucumber20Per = cucumberCost * (20/100);
