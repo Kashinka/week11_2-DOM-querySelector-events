@@ -1,65 +1,50 @@
-let cucumberCost = 300;
+// Устанавливаем цены на продукты
+const cucumberCost = 300;
+const tomatoCost = 450;
+const greeneryCost = 110;
+const sourcreamCost = 95;
 
-let tomatoCost = 450;
-
-let greeneryCost = 110;
-
-let sourcreamCost = 95;
-
+// Получаем элементы страницы для вывода результатов
 const result1 = document.getElementById("result1");
-
-result1.innerHTML = `Огурцы ${cucumberCost} руб.`;
-
 const result2 = document.getElementById("result2");
-
-result2.innerHTML = `Помидоры ${tomatoCost} руб.`;
-
 const result3 = document.getElementById("result3");
-
-result3.innerHTML = `Зелень ${greeneryCost} руб.`;
-
 const result4 = document.getElementById("result4");
-
-result4.innerHTML = `Сметана ${sourcreamCost} руб.`;
-
-let sum = cucumberCost + tomatoCost + greeneryCost + sourcreamCost;
-
 const result5 = document.getElementById("result5");
 
+// Выводим цены на продукты
+result1.innerHTML = `Огурцы ${cucumberCost} руб.`;
+result2.innerHTML = `Помидоры ${tomatoCost} руб.`;
+result3.innerHTML = `Зелень ${greeneryCost} руб.`;
+result4.innerHTML = `Сметана ${sourcreamCost} руб.`;
+
+// Считаем сумму всех покупок
+const sum = cucumberCost + tomatoCost + greeneryCost + sourcreamCost;
+
+// Выводим итоговую сумму
 result5.innerHTML = `Итого: ${sum} руб.`;
 
-let cucumber20Per = cucumberCost * (80/100);
+// Устанавливаем значение скидки в 20%
+const couponDiscount = 0.8;
 
-let tomato20Per = tomatoCost * (80/100);
+// Считаем цены на продукты со скидкой
+const cucumber20Per = cucumberCost * couponDiscount;
+const tomato20Per = tomatoCost * couponDiscount;
+const greenery20Per = greeneryCost * couponDiscount;
+const sourcream20Per = sourcreamCost * couponDiscount;
 
-let greenery20Per = greeneryCost * (80/100);
+// Считаем сумму покупок со скидкой
+const couponCost = cucumber20Per + tomato20Per + greenery20Per + sourcream20Per;
 
-let sourcream20Per = sourcreamCost * (80/100);
+// Получаем кнопку
+const button = document.getElementById("button");
 
-let couponCost = cucumber20Per + tomato20Per + greenery20Per + sourcream20Per;
-
-let button = document.getElementById("button");
-
+// Устанавливаем обработчик события для кнопки
 button.onclick = function() {
-
-    const result1 = document.getElementById("result1");
-
+    // Выводим цены на продукты со скидкой
     result1.innerHTML = `Огурцы ${cucumber20Per} руб.`;
-
-    const result2 = document.getElementById("result2");
-
     result2.innerHTML = `Помидоры ${tomato20Per} руб.`;
-
-    const result3 = document.getElementById("result3");
-
     result3.innerHTML = `Зелень ${greenery20Per} руб.`;
-
-    const result4 = document.getElementById("result4");
-
     result4.innerHTML = `Сметана ${sourcream20Per} руб.`;
-
-    const result5 = document.getElementById("result5");
-
-    result5.innerHTML = `Итого: ${couponCost} руб.`;
+    result5.innerHTML = `Итого: ${couponCost} руб.`; // Выводим итоговую сумму со скидкой
 
 };
